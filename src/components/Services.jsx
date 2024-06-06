@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 
 const serviceTiers = [
   {
@@ -111,6 +111,33 @@ const Services = () => (
             <li key={i}>{feature}</li>
           ))}
         </Box>
+        <Box
+          sx={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "1em",
+          }}
+        >
+          <Button
+            // onClick={handleScroll}
+            variant="contained"
+            size="large"
+            sx={{
+              borderRadius: 10,
+              backgroundColor: "#FF4500",
+              color: "white",
+              "&:hover": {
+                fontWeight: "bold",
+                backgroundColor: "#FF8C00",
+              },
+              margin: "0 20px",
+              fontSize: "1.2em",
+            }}
+          >
+            Get Started{" "}
+          </Button>{" "}
+        </Box>
       </Box>
     ))}
     <Box
@@ -164,6 +191,33 @@ const Services = () => (
         <li>Detailed documentation</li>
         <li>5 revisions included</li>
         <li>Post-delivery support for 21 days</li>
+      </Box>
+      <Box
+        sx={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "1em",
+        }}
+      >
+        <Button
+          // onClick={handleScroll}
+          variant="contained"
+          size="large"
+          sx={{
+            borderRadius: 10,
+            backgroundColor: "#FF4500",
+            color: "white",
+            "&:hover": {
+              fontWeight: "bold",
+              backgroundColor: "#FF8C00",
+            },
+            margin: "0 20px",
+            fontSize: "1.2em",
+          }}
+        >
+          Get Started{" "}
+        </Button>{" "}
       </Box>
     </Box>
   </Box>
