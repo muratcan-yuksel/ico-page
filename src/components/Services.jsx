@@ -1,5 +1,46 @@
 import { Box, Typography } from "@mui/material";
 
+const serviceTiers = [
+  {
+    title: "Tier 1: Basic ICO Smart Contract Development",
+    features: [
+      "Development of a secure ERC-20 (or similar) token smart contract",
+      "Comprehensive testing and debugging",
+      "Deployment on the Ethereum (or preferred) blockchain",
+      "Basic documentation and user guide",
+      "2 revisions included",
+      "Post-delivery support for 7 days",
+    ],
+  },
+  {
+    title: "Tier 2: Token Sale Integration",
+    features: [
+      "Includes everything in Tier 1",
+      "Development of a token sale (ICO) smart contract",
+      "Integration with the token smart contract",
+      "Configuration of ICO phases and parameters",
+      "Comprehensive testing and debugging",
+      "Detailed documentation",
+      "3 revisions included",
+      "Post-delivery support for 14 days",
+    ],
+  },
+  {
+    title: "Tier 3: Complete ICO Solution with Frontend Integration",
+    features: [
+      "Includes everything in Tier 2",
+      "Development of a responsive frontend for the ICO",
+      "Integration of frontend with ICO smart contract",
+      "Features include investor dashboard and transaction history",
+      "Customization to match your branding",
+      "Deployment of frontend on a web server",
+      "Detailed documentation",
+      "5 revisions included",
+      "Post-delivery support for 21 days",
+    ],
+  },
+];
+
 const Services = () => (
   <Box
     sx={{
@@ -8,118 +49,52 @@ const Services = () => (
         xs: "column",
         lg: "row",
       },
-      justifyContent: "center",
+      flexWrap: "wrap",
+      justifyContent: "space-around",
       alignItems: "center",
-      gap: "20px",
-      border: "5px solid red",
-      width: "auto",
+      gap: {
+        xs: "20px",
+        lg: "70px 0",
+      },
+      width: "100%",
     }}
   >
-    {/* <h2>Our Services</h2>{" "} */}
-    <Box
-      sx={{
-        bgcolor: "#3a2b55",
-        padding: "20px",
-        borderRadius: "20px",
-        height: "500px",
-        marginBottom: "20px",
-        width: {
-          xs: "80%",
-          lg: "500px",
-        },
-      }}
-    >
-      <Typography
+    {serviceTiers.map((tier, index) => (
+      <Box
+        key={index}
         sx={{
-          color: "#9075ff",
-          fontSize: "1.5em",
-          fontWeight: "bold",
+          bgcolor: "#FFFAF0",
+          borderRadius: "20px",
+          border: "1px solid #333333",
+          height: "500px",
+          marginBottom: "20px",
+          width: {
+            xs: "80%",
+            lg: "500px",
+          },
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "flex-start",
+          alignItems: "flex-start",
+          padding: "40px 0 0 40px",
         }}
       >
-        Tier 1: Basic ICO Smart Contract Development
-      </Typography>
-      <ul
-        style={{
-          fontSize: "1.2em",
-        }}
-      >
-        <li>
-          Development of a secure ERC-20 (or similar) token smart contract
-        </li>
-        <li>Comprehensive testing and debugging</li>
-        <li>Deployment on the Ethereum (or preferred) blockchain</li>
-        <li>Basic documentation and user guide</li>
-        <li>2 revisions included</li>
-        <li>Post-delivery support for 7 days</li>
-      </ul>
-    </Box>
-    <Box
-      sx={{
-        bgcolor: "#3a2b55",
-        padding: "20px",
-        borderRadius: "20px",
-        height: "500px",
-        width: {
-          xs: "80%",
-          lg: "500px",
-        },
-      }}
-    >
-      {" "}
-      <Typography
-        sx={{
-          color: "#9075ff",
-          fontSize: "1.5em",
-          fontWeight: "bold",
-        }}
-      >
-        Tier 2: Token Sale Integration
-      </Typography>
-      <ul>
-        <li>Includes everything in Tier 1</li>
-        <li>Development of a token sale (ICO) smart contract</li>
-        <li>Integration with the token smart contract</li>
-        <li>Configuration of ICO phases and parameters</li>
-        <li>Comprehensive testing and debugging</li>
-        <li>Detailed documentation</li>
-        <li>3 revisions included</li>
-        <li>Post-delivery support for 14 days</li>
-      </ul>
-    </Box>
-    <Box
-      sx={{
-        bgcolor: "#3a2b55",
-        padding: "20px",
-        borderRadius: "20px",
-        height: "500px",
-        width: {
-          xs: "80%",
-          lg: "500px",
-        },
-      }}
-    >
-      {" "}
-      <Typography
-        sx={{
-          color: "#9075ff",
-          fontSize: "1.5em",
-          fontWeight: "bold",
-        }}
-      >
-        Tier 3: Complete ICO Solution with Frontend Integration
-      </Typography>
-      <ul>
-        <li>Includes everything in Tier 2</li>
-        <li>Development of a responsive frontend for the ICO</li>
-        <li>Integration of frontend with ICO smart contract</li>
-        <li>Features include investor dashboard and transaction history</li>
-        <li>Customization to match your branding</li>
-        <li>Deployment of frontend on a web server</li>
-        <li>Detailed documentation</li>
-        <li>5 revisions included</li>
-        <li>Post-delivery support for 21 days</li>
-      </ul>
-    </Box>
+        <Typography
+          sx={{
+            color: "#333333",
+            fontSize: "1.7em",
+            fontWeight: "bold",
+          }}
+        >
+          {tier.title}
+        </Typography>
+        <ul style={{ fontSize: "1.3em", lineHeight: "2em" }}>
+          {tier.features.map((feature, i) => (
+            <li key={i}>{feature}</li>
+          ))}
+        </ul>
+      </Box>
+    ))}
   </Box>
 );
 
