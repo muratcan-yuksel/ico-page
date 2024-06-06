@@ -60,12 +60,85 @@ const Homepage = () => (
           md: "1.3em",
         },
         lineHeight: "2em",
+        display: "flex",
+        flexDirection: {
+          xs: "column",
+          lg: "row",
+        },
+        justifyContent: "center",
+        alignItems: "center",
+        width: "100%",
       }}
     >
-      <li style={{ fontWeight: "bold" }}>Smart Contract Development</li>
-      <li style={{ fontWeight: "bold" }}>ICO Integration</li>
-      <li style={{ fontWeight: "bold" }}>Frontend Integration</li>
-      <li style={{ fontWeight: "bold" }}>Post-Launch Support</li>
+      <Box
+        sx={{
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: {
+            xs: "center",
+            lg: "left",
+          },
+        }}
+      >
+        <Typography
+          sx={{
+            fontWeight: "bold",
+            width: "50%",
+            marginBottom: "0.5em",
+            fontSize: "1em",
+          }}
+        >
+          Smart Contract Development
+        </Typography>
+        <Typography
+          sx={{
+            fontWeight: "bold",
+            width: "50%",
+            marginBottom: "0.5em",
+            fontSize: "1em",
+          }}
+        >
+          ICO Integration
+        </Typography>
+      </Box>
+      <Box
+        sx={{
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: {
+            xs: "center",
+            lg: "right",
+          },
+        }}
+      >
+        {" "}
+        <Typography
+          sx={{
+            fontSize: "1em",
+            fontWeight: "bold",
+            width: "50%",
+            marginBottom: "0.5em",
+          }}
+        >
+          Frontend Integration
+        </Typography>
+        <Typography
+          sx={{
+            fontSize: "1em",
+            fontWeight: "bold",
+            width: "50%",
+            marginBottom: "0.5em",
+          }}
+        >
+          Post-Launch Support
+        </Typography>
+      </Box>
     </Box>
     <Button
       // onClick={handleScroll}
