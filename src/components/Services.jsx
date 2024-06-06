@@ -45,10 +45,7 @@ const Services = () => (
   <Box
     sx={{
       display: "flex",
-      flexDirection: {
-        xs: "column",
-        lg: "row",
-      },
+      flexDirection: "column",
       flexWrap: "wrap",
       justifyContent: "space-around",
       alignItems: "center",
@@ -59,87 +56,103 @@ const Services = () => (
       width: "100%",
     }}
   >
-    {serviceTiers.map((tier, index) => (
-      <Box
-        key={index}
-        sx={{
-          bgcolor: "#FFFAF0",
-          borderRadius: "20px",
-          border: "1px solid #333333",
-          height: "auto",
-          minHeight: {
-            xs: "auto",
-            md: "500px",
-          },
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: {
+          xs: "column",
+          lg: "row",
+        },
+        justifyContent: "center",
+        alignItems: "center",
+        gap: {
+          xs: "20px",
+          lg: "70px",
+        },
+      }}
+    >
+      {serviceTiers.map((tier, index) => (
+        <Box
+          key={index}
+          sx={{
+            bgcolor: "#FFFAF0",
+            borderRadius: "20px",
+            border: "1px solid #333333",
+            height: "auto",
+            minHeight: {
+              xs: "auto",
+              md: "500px",
+            },
 
-          marginBottom: "20px",
-          width: {
-            xs: "80%",
-            lg: "500px",
-          },
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "flex-start",
-          alignItems: "flex-start",
-          padding: "3em",
-        }}
-      >
-        <Typography
-          sx={{
-            color: "#333333",
-            fontSize: {
-              xs: "1.5em",
-              md: "1.7em",
+            marginBottom: "20px",
+            width: {
+              xs: "70%",
+              lg: "500px",
             },
-            fontWeight: "bold",
-            marginBottom: "1em",
-          }}
-        >
-          {tier.title}
-        </Typography>
-        <Box
-          sx={{
-            fontSize: {
-              xs: "1em",
-              md: "1.3em",
-            },
-            lineHeight: "2em",
-          }}
-        >
-          {" "}
-          {tier.features.map((feature, i) => (
-            <li key={i}>{feature}</li>
-          ))}
-        </Box>
-        <Box
-          sx={{
-            width: "100%",
             display: "flex",
-            justifyContent: "center",
-            marginTop: "1em",
+            flexDirection: "column",
+            justifyContent: "flex-start",
+            alignItems: "flex-start",
+            padding: "3em",
           }}
         >
-          <Button
-            // onClick={handleScroll}
-            variant="contained"
-            size="large"
+          <Typography
             sx={{
-              borderRadius: 10,
-              backgroundColor: "#FF4500",
-              color: "white",
-              "&:hover": {
-                fontWeight: "bold",
-                backgroundColor: "#FF8C00",
+              color: "#333333",
+              fontSize: {
+                xs: "1.5em",
+                md: "1.7em",
               },
-              margin: "0 20px",
-              fontSize: "1.2em",
+              fontWeight: "bold",
+              marginBottom: "1em",
             }}
           >
-            Get Started{" "}
-          </Button>{" "}
+            {tier.title}
+          </Typography>
+          <Box
+            sx={{
+              fontSize: {
+                xs: "1em",
+                md: "1.3em",
+              },
+              lineHeight: "2em",
+            }}
+          >
+            {" "}
+            {tier.features.map((feature, i) => (
+              <li key={i}>{feature}</li>
+            ))}
+          </Box>
+          <Box
+            sx={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "1em",
+            }}
+          >
+            <Button
+              // onClick={handleScroll}
+              variant="contained"
+              size="large"
+              sx={{
+                borderRadius: 10,
+                backgroundColor: "#FF4500",
+                color: "white",
+                "&:hover": {
+                  fontWeight: "bold",
+                  backgroundColor: "#FF8C00",
+                },
+                margin: "0 20px",
+                fontSize: "1.2em",
+              }}
+            >
+              Get Started{" "}
+            </Button>{" "}
+          </Box>
         </Box>
-      </Box>
-    ))}
+      ))}
+    </Box>
     <Box
       sx={{
         bgcolor: "#FFFAF0",
@@ -149,7 +162,7 @@ const Services = () => (
         minHeight: "600px",
         marginBottom: "20px",
         width: {
-          xs: "80%",
+          xs: "70%",
           lg: "500px",
         },
         display: "flex",
