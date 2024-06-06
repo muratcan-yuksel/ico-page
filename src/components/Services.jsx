@@ -67,6 +67,11 @@ const Services = () => (
           borderRadius: "20px",
           border: "1px solid #333333",
           height: "auto",
+          minHeight: {
+            xs: "auto",
+            md: "500px",
+          },
+
           marginBottom: "20px",
           width: {
             xs: "80%",
@@ -114,6 +119,7 @@ const Services = () => (
         borderRadius: "20px",
         border: "1px solid #333333",
         height: "auto",
+        minHeight: "600px",
         marginBottom: "20px",
         width: {
           xs: "80%",

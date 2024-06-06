@@ -2,6 +2,7 @@ import React from "react";
 import Homepage from "./components/Homepage";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
 import { Box } from "@mui/material";
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
         height: "100%",
       }}
     >
+      <Navbar />
       <Homepage />
       <Services />
       <Contact />
