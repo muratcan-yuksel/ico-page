@@ -75,9 +75,9 @@ const Services = () => (
         <Box
           key={index}
           sx={{
-            bgcolor: "#FFFAF0",
+            bgcolor: "#3a2c56",
             borderRadius: "20px",
-            border: "1px solid #333333",
+            border: "1px solid whitesmoke",
             height: "auto",
             minHeight: {
               xs: "auto",
@@ -98,7 +98,7 @@ const Services = () => (
         >
           <Typography
             sx={{
-              color: "#333333",
+              color: "whitesmoke",
               fontSize: {
                 xs: "1.5em",
                 md: "1.7em",
@@ -137,11 +137,10 @@ const Services = () => (
               size="large"
               sx={{
                 borderRadius: 10,
-                backgroundColor: "#FF4500",
+                backgroundColor: "#8263ff",
                 color: "white",
                 "&:hover": {
                   fontWeight: "bold",
-                  backgroundColor: "#FF8C00",
                 },
                 margin: "0 20px",
                 fontSize: "1.2em",
@@ -155,9 +154,9 @@ const Services = () => (
     </Box>
     <Box
       sx={{
-        bgcolor: "#FFFAF0",
+        bgcolor: "#3a2c56",
         borderRadius: "20px",
-        border: "1px solid #333333",
+        border: "1px solid whitesmoke",
         height: "auto",
         minHeight: "600px",
         marginBottom: "20px",
@@ -175,7 +174,7 @@ const Services = () => (
       {" "}
       <Typography
         sx={{
-          color: "#333333",
+          color: "whitesmoke",
           fontSize: {
             xs: "1.5em",
             md: "1.7em",
@@ -219,11 +218,10 @@ const Services = () => (
           size="large"
           sx={{
             borderRadius: 10,
-            backgroundColor: "#FF4500",
+            backgroundColor: "#8263ff",
             color: "white",
             "&:hover": {
               fontWeight: "bold",
-              backgroundColor: "#FF8C00",
             },
             margin: "0 20px",
             fontSize: "1.2em",

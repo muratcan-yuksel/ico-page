@@ -14,7 +14,7 @@ const Homepage = () => (
   >
     <Typography
       sx={{
-        color: "#333333",
+        color: "whitesmoke",
         fontSize: {
           xs: "1.5em",
           md: "3em",
@@ -30,10 +30,10 @@ const Homepage = () => (
       sx={{
         fontSize: {
           xs: "1em",
-          md: "1.3em",
+          md: "1.5em",
         },
-        lineHeight: "2em",
         fontWeight: "bold",
+        lineHeight: "2em",
       }}
     >
       At ICO Build Hub, I provide professional ICO development services to help
@@ -42,7 +42,7 @@ const Homepage = () => (
     </Typography>
     <Typography
       sx={{
-        color: "#333333",
+        color: "whitesmoke",
         fontSize: {
           xs: "1.5em",
           md: "3em",
@@ -85,20 +85,20 @@ const Homepage = () => (
       >
         <Typography
           sx={{
-            fontWeight: "bold",
             width: "50%",
             marginBottom: "0.5em",
-            fontSize: "1em",
+            fontSize: "1.2em",
+            fontWeight: "bold",
           }}
         >
           Smart Contract Development
         </Typography>
         <Typography
           sx={{
-            fontWeight: "bold",
             width: "50%",
             marginBottom: "0.5em",
-            fontSize: "1em",
+            fontSize: "1.2em",
+            fontWeight: "bold",
           }}
         >
           ICO Integration
@@ -120,20 +120,20 @@ const Homepage = () => (
         {" "}
         <Typography
           sx={{
-            fontSize: "1em",
-            fontWeight: "bold",
+            fontSize: "1.2em",
             width: "50%",
             marginBottom: "0.5em",
+            fontWeight: "bold",
           }}
         >
           Frontend Integration
         </Typography>
         <Typography
           sx={{
-            fontSize: "1em",
-            fontWeight: "bold",
+            fontSize: "1.2em",
             width: "50%",
             marginBottom: "0.5em",
+            fontWeight: "bold",
           }}
         >
           Post-Launch Support
@@ -146,11 +146,10 @@ const Homepage = () => (
       size="large"
       sx={{
         borderRadius: 10,
-        backgroundColor: "#FF4500",
+        backgroundColor: "#8263ff",
         color: "white",
         "&:hover": {
           fontWeight: "bold",
-          backgroundColor: "#FF8C00",
         },
         margin: " 1.5em",
         fontSize: {
@@ -165,7 +164,7 @@ const Homepage = () => (
       sx={{
         fontSize: {
           xs: "1em",
-          md: "1.3em",
+          md: "1.5em",
         },
         lineHeight: "2em",
         fontWeight: "bold",

@@ -92,11 +92,10 @@ export default function ButtonAppBar() {
               size="large"
               sx={{
                 borderRadius: 10,
-                backgroundColor: "#FF4500",
+                backgroundColor: "#8263ff",
                 color: "white",
                 "&:hover": {
                   fontWeight: "bold",
-                  backgroundColor: "#FF8C00",
                 },
                 margin: "0 20px",
                 fontSize: {
