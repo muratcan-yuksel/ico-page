@@ -1,5 +1,10 @@
 import { Box, Button, Typography } from "@mui/material";
 
+const handleScroll = () => {
+  const section = document.getElementById("contact");
+  section.scrollIntoView({ behavior: "smooth" });
+};
+
 const serviceTiers = [
   {
     title: "Tier 1: Basic ICO Smart Contract Development",
@@ -11,6 +16,7 @@ const serviceTiers = [
       "2 revisions included",
       "Post-delivery support for 7 days",
     ],
+    price: "$500",
   },
   {
     title: "Tier 2: Token Sale Integration",
@@ -24,6 +30,7 @@ const serviceTiers = [
       "3 revisions included",
       "Post-delivery support for 14 days",
     ],
+    price: "$1500",
   },
   // {
   //   title: "Tier 3: Complete ICO Solution with Frontend Integration",
@@ -123,6 +130,19 @@ const Services = () => (
               <li key={i}>{feature}</li>
             ))}
           </Box>
+          <Typography
+            sx={{
+              color: "floralwhite",
+              fontSize: {
+                xs: "1.5em",
+                md: "1.7em",
+              },
+              fontWeight: "bold",
+              marginTop: "1em",
+            }}
+          >
+            {tier.price}
+          </Typography>
           <Box
             sx={{
               width: "100%",
@@ -132,7 +152,7 @@ const Services = () => (
             }}
           >
             <Button
-              // onClick={handleScroll}
+              onClick={handleScroll}
               variant="contained"
               size="large"
               sx={{
@@ -203,7 +223,20 @@ const Services = () => (
         <li>Detailed documentation</li>
         <li>5 revisions included</li>
         <li>Post-delivery support for 21 days</li>
-      </Box>
+      </Box>{" "}
+      <Typography
+        sx={{
+          color: "floralwhite",
+          fontSize: {
+            xs: "1.5em",
+            md: "1.7em",
+          },
+          fontWeight: "bold",
+          marginTop: "1em",
+        }}
+      >
+        $3000{" "}
+      </Typography>
       <Box
         sx={{
           width: "100%",
@@ -212,8 +245,9 @@ const Services = () => (
           marginTop: "1em",
         }}
       >
+        {" "}
         <Button
-          // onClick={handleScroll}
+          onClick={handleScroll}
           variant="contained"
           size="large"
           sx={{

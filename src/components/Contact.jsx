@@ -38,7 +38,8 @@ const Contact = () => (
         marginBottom: "1em",
       }}
     >
-      Have a question or ready to start your project? Reach out to me today.
+      Have a question or ready to start your project? Reach out to me today by
+      sending an email to mail@muratcanyuksel.xyz or using the links below.
     </Typography>
     <Typography
       sx={{

@@ -1,6 +1,11 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 
+const handleScroll = () => {
+  const section = document.getElementById("contact");
+  section.scrollIntoView({ behavior: "smooth" });
+};
+
 const Homepage = () => (
   <Box
     id="homepage"
@@ -155,7 +160,7 @@ const Homepage = () => (
       </Box>
     </Box>
     <Button
-      // onClick={handleScroll}
+      onClick={handleScroll}
       variant="contained"
       size="large"
       sx={{

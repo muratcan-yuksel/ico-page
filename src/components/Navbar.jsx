@@ -17,7 +17,7 @@ export default function ButtonAppBar() {
   }, []); // Run effect only once on component mount
 
   const handleScroll = () => {
-    const section = document.getElementById("actionCall");
+    const section = document.getElementById("contact");
     section.scrollIntoView({ behavior: "smooth" });
   };
 
