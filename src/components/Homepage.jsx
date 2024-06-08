@@ -14,7 +14,7 @@ const Homepage = () => (
   >
     <Typography
       sx={{
-        color: "whitesmoke",
+        color: "floralwhite",
         fontSize: {
           xs: "1.5em",
           md: "3em",
@@ -42,13 +42,15 @@ const Homepage = () => (
     </Typography>
     <Typography
       sx={{
-        color: "whitesmoke",
+        color: "floralwhite",
         fontSize: {
           xs: "1.5em",
           md: "3em",
         },
         fontWeight: "bold",
         margin: "1em 0 0 0",
+        width: "100%",
+        textAlign: "center",
       }}
     >
       Services Offered
@@ -85,7 +87,10 @@ const Homepage = () => (
       >
         <Typography
           sx={{
-            width: "50%",
+            width: {
+              xs: "100",
+              md: "50%",
+            },
             marginBottom: "0.5em",
             fontSize: "1.2em",
             fontWeight: "bold",
@@ -95,7 +100,10 @@ const Homepage = () => (
         </Typography>
         <Typography
           sx={{
-            width: "50%",
+            width: {
+              xs: "100",
+              md: "50%",
+            },
             marginBottom: "0.5em",
             fontSize: "1.2em",
             fontWeight: "bold",
@@ -121,7 +129,10 @@ const Homepage = () => (
         <Typography
           sx={{
             fontSize: "1.2em",
-            width: "50%",
+            width: {
+              xs: "100",
+              md: "50%",
+            },
             marginBottom: "0.5em",
             fontWeight: "bold",
           }}
@@ -131,7 +142,10 @@ const Homepage = () => (
         <Typography
           sx={{
             fontSize: "1.2em",
-            width: "50%",
+            width: {
+              xs: "100",
+              md: "50%",
+            },
             marginBottom: "0.5em",
             fontWeight: "bold",
           }}

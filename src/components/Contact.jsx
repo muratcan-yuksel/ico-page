@@ -22,7 +22,6 @@ const Contact = () => (
         },
         fontWeight: "bold",
         margin: "1em 0 0 0",
-        marginBottom: "1em",
       }}
     >
       Contact Me
@@ -65,13 +64,20 @@ const Contact = () => (
         fontWeight: "bold",
         margin: "1em 0 0 0",
         marginBottom: "1em",
+        "&:hover": {
+          textDecoration: "underline",
+        },
       }}
     >
       <a
+        style={{
+          color: "#333333",
+          textDecoration: "none",
+        }}
         href="https://www.upwork.com/freelancers/~013e02c0111a99e5d5"
         target="_blank"
       >
-        Upwork
+        Click to find me on Upwork
       </a>{" "}
     </Typography>
     <Typography
@@ -84,10 +90,20 @@ const Contact = () => (
         fontWeight: "bold",
         margin: "1em 0 0 0",
         marginBottom: "1em",
+        "&:hover": {
+          textDecoration: "underline",
+        },
       }}
     >
-      <a href="https://www.linkedin.com/in/muratcanyuksel/" target="_blank">
-        LinkedIn
+      <a
+        style={{
+          color: "#333333",
+          textDecoration: "none",
+        }}
+        href="https://www.linkedin.com/in/muratcanyuksel/"
+        target="_blank"
+      >
+        Click to find me on LinkedIn
       </a>
     </Typography>
     <Typography

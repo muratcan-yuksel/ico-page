@@ -77,7 +77,7 @@ const Services = () => (
           sx={{
             bgcolor: "#3a2c56",
             borderRadius: "20px",
-            border: "1px solid whitesmoke",
+            border: "1px solid floralwhite",
             height: "auto",
             minHeight: {
               xs: "auto",
@@ -98,7 +98,7 @@ const Services = () => (
         >
           <Typography
             sx={{
-              color: "whitesmoke",
+              color: "floralwhite",
               fontSize: {
                 xs: "1.5em",
                 md: "1.7em",
@@ -156,7 +156,7 @@ const Services = () => (
       sx={{
         bgcolor: "#3a2c56",
         borderRadius: "20px",
-        border: "1px solid whitesmoke",
+        border: "1px solid floralwhite",
         height: "auto",
         minHeight: "600px",
         marginBottom: "20px",
@@ -174,7 +174,7 @@ const Services = () => (
       {" "}
       <Typography
         sx={{
-          color: "whitesmoke",
+          color: "floralwhite",
           fontSize: {
             xs: "1.5em",
             md: "1.7em",
